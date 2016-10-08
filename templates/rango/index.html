@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+{% load staticfiles %} <!-- load static files -->
 <html>
 <head>
   <title>Rango</title>
+
+  <link href="{% static 'css/bootstrap.min.css'%} " rel="stylesheet" media="screen">
+  <link href="{% static 'css/flat-ui.min.css' %}" rel="stylesheet">
 </head>
 <body>
   <h1>Rango says...</h1>
@@ -11,6 +15,11 @@
   </div>
   <div>
     <a href="about">About</a> <br />
+    <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /> <br />
   </div>
+
+
+  <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+  <script src="{% static 'js/flat-ui.min.js' %}"></script>
 </body>
 </html>
